@@ -1,0 +1,13 @@
+<h2>Product Details</h2>
+
+<div *ngIf="product">
+  <h1>{{ product.name }}</h1>
+  <img [src]="product.image" width="240px" />
+  <h3>price: {{ product.price | currency : "tenge "}}</h3>
+  <h3>description: {{ product.description }}</h3>
+  <h3>rating: {{ product.rating }}</h3>
+  <button type="button" (click)="goToKaspi(product)">More information</button>
+  <br>
+  <br>
+  <button type="button" (click)="addToCart(product)">Buy</button>
+</div>

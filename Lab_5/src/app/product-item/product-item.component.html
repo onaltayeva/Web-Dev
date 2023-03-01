@@ -1,0 +1,55 @@
+<div class="prodName">
+    <h4>
+        <a [routerLink]="['/products', productFromCategory.id]">
+            {{productFromCategory.name}}
+        </a>
+    </h4>
+</div>
+
+<div class="img_and_descr">
+    <img [src]="productFromCategory.image" alt="" width="100px"/>
+    <p *ngIf="productFromCategory.description">Description: {{ productFromCategory.description }}</p>
+</div>
+
+<div class="share_button">
+    <button type="button" (click)="share()">Share</button>
+</div>
+
+<div class="like_button">
+    <br>
+    <button (click)="toLike()">like </button>
+    <h4> likes: {{this.likeCounter}}</h4>
+</div>
+
+<div class="remove">
+    <button (click)="removeItem()"> remove </button>
+</div>
+
+
+<!--<app-product-alerts [product]="productFromCategory" ]>-->
+<!--</app-product-alerts>-->
+
+
+
+
+<!--code below from product list component-->
+
+<!--<div *ngFor="let product of products">-->
+<!--  <h3>-->
+<!--    <a-->
+<!--      [title]="product.name + ' details'"-->
+<!--      [routerLink]="['/products', product.id]"-->
+<!--    >-->
+<!--      {{ product.name }}-->
+<!--    </a>-->
+<!--  </h3>-->
+
+<!--  <img [src]="product.image" alt="" width="100px" />-->
+
+<!--  <p *ngIf="product.description">Description: {{ product.description }}</p>-->
+
+<!--  <button type="button" (click)="share(product)">Share</button>-->
+
+<!--  <app-product-alerts [product]="product" (notify)="onNotify()">-->
+<!--  </app-product-alerts>-->
+<!--</div>-->

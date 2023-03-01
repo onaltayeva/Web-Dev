@@ -1,0 +1,11 @@
+<h1>Categories</h1>
+
+<div *ngFor="let category of categoryProducts">
+    <h4>
+        <a [title]="'click to view' + category.title"
+           [routerLink]="['/categories', category.id]"
+           >
+            {{ category.title }}
+        </a>
+    </h4>
+</div>
