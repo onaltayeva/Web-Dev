@@ -1,0 +1,8 @@
+<div class="main">
+  <h1>Companies</h1>
+  <div *ngFor = "let company of companies" class="companies">
+    <a routerLink="{{company.id}}"><div class="company">
+      <h2>#{{company.id}} - {{company.name}}</h2>
+    </div></a>
+  </div>
+</div>

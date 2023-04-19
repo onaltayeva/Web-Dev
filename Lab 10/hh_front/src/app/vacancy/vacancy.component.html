@@ -1,0 +1,8 @@
+<div class="main">
+  <div *ngFor = "let vacancy of vacancies" class="vacancies">
+    <div class="vacancy">
+      <h3>#{{vacancy.id}} - {{vacancy.name}}</h3>
+      <b> Salary: {{vacancy.salary}}$</b>
+    </div>
+  </div>
+</div>

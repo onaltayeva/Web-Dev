@@ -1,0 +1,9 @@
+<div class="main">
+  <div *ngIf = company class="company">
+    <h2>#{{company.id}} - {{company.name}}</h2>
+    <h3>{{company.city}}</h3>
+    <h3>{{company.address}}</h3>
+    <h3>Description: <i>{{company.description}}</i> </h3>
+    <a class ="btn" routerLink="vacancies"><button>Get vacancies</button></a>
+  </div>
+</div>

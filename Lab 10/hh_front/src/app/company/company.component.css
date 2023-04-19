@@ -1,0 +1,16 @@
+.companies{
+  border:1px solid;
+  border-radius: 10px;
+  width:40%;
+  margin: 20px;
+}
+.company{
+  margin-left: 20px;
+}
+a{
+  text-decoration: none;
+  color:black
+}
+a:hover{
+  color:green;
+}
